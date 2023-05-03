@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parent {
+            background: yellow;
+            padding: 20px;
+            position: relative;
+            height: 300px;
+        }
+
+        .child {
+            display: inline-block;
+            background: orange;
+            padding: 20px;
+        }
+
+        .parent::before {
+            content: "Nội dung before";
+            display: inline-block;
+            background: orange;
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .parent::after {
+            content: "Nội dung after";
+            display: inline-block;
+            background: orange;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+
+    <div class="parent">
+        <!-- <div class="child">Nội dung div con</div> -->
+        Nội dung...
+    </div>
+
+    <!-- <style>
+        .text::first-letter {
+            font-size: 32px;
+        }
+
+        .text::first-line {
+            color: red;
+        }
+    </style>
+
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates iusto fuga itaque accusamus eveniet architecto illo, sed nihil! Provident ab at alias a minima corrupti blanditiis nisi molestias voluptatum corporis.</p> -->
+    <!-- <style>
+        ul li {
+            color: red;
+        }
+
+        ul li::marker {
+            font-size: 30px;
+            color: pink;
+        }
+    </style>
+
+    <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul> -->
+
+    <style>
+        .text-2::selection {
+            background: red;
+            color: green;
+        }
+    </style>
+    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium quaerat minima soluta temporibus ipsum nobis nemo eveniet tempore? Sed dolorum non iure optio sint necessitatibus vitae, et placeat illum!</p>
+</body>
+</html>

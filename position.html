@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        body {
+            margin: 0;
+        }
+        .header {
+            z-index: 9999;
+            opacity: 0.6;
+            background: yellow;
+            padding: 20px;
+            /* position: fixed; */
+            /* position: sticky; */
+            top: 0;
+            left: 0;
+            
+        }
+        .box {
+            background-color: orange;
+            border: 1px solid #000;
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+        }
+
+        .box-2 {
+            position: relative;
+            /* top: 50px;
+            left: 100px; */
+            /* right: 200px;
+            bottom: 100px; */
+        }
+        .box-3 {
+            position: relative;
+            /* margin-top: 60px; */
+        }
+        .child {
+            background: red;
+            width: 100px;
+            height: 80px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .call {
+            background: green;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+        }
+
+        .box-4 {
+            background: #9a6400;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+
+    <!-- <div class="box">
+        Box 1
+    </div>
+
+    <div class="box box-2">
+        Box 2
+    </div> -->
+
+    <header class="header">
+        Header
+    </header>
+    <div class="box box-3">
+        Box 3
+
+        <div class="child">
+            Box child
+        </div>
+    </div>
+
+    <div class="call">
+        Call
+    </div>
+
+    <div class="box-4">
+        Box 4
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facere blanditiis incidunt, voluptatem eaque reprehenderit ut dolorem expedita dignissimos quia labore, sunt fugiat non, nam illo. Odit eum modi hic?
+      </p>
+</body>
+</html>
